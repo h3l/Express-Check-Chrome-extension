@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family:  "Times New Roman", 
+             "Microsoft YaHei", "微软雅黑", 
+             STXihei, "华文细黑", 
+             serif;
+            width: 480px;
+            height: 500px;
+            font-size: 14px;
+            padding-left: 20px;
+            padding-top: 20px;
+        }
+        ul{
+            list-style-type: none;
+
+        }
+
+        #state{
+            color:red;
+        }
+        .trans:nth-child(2){
+            color:red;
+        }
+        .item{
+            padding:2px;
+        }
+        .item:hover{
+            background-color: #aaa;
+        }
+        .trans{
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-top: 1px solid #bbb;
+        }
+        #item_show{
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        </style>
+    </head>
+    <body>
+        <form>
+        <select id="comp" name="company">
+            <option value="yuantong">圆通速递</option>
+            <option value="shentong">申通快递</option>
+            <option value="zhongtong">中通快递</option>
+            <option value="yunda">韵达快递</option>
+            <option value="shunfeng">顺丰速运</option>
+            <option value="zhaijisong">宅急送</option>
+            <option value="ems">EMS</option>
+            <option value="tiantian">天天快递</option>
+            <option value="suer">速尔快递</option>
+            <option value="youshuwuliu">优速物流</option>
+            <option value="quanfengkuaidi">全峰快递</option>
+            <option value="debangwuliu">德邦</option>
+            <option value="aae">AAE全球专递</option>
+            <option value="auspost">澳大利亚邮政</option>
+            <option value="aramex">Aramex</option>
+            <option value="huitongkuaidi">百世汇通</option>
+            <option value="youzhengguonei">包裹信件</option>
+            <option value="bpost">比利时邮政</option>
+            <option value="citylink">City-Link</option>
+            <option value="coe">COE</option>
+            <option value="dhl">DHL中国件</option>
+            <option value="dhlde">DHL德国件</option>
+            <option value="disifang">递四方</option>
+            <option value="emsguoji">EMS国际件</option>
+            <option value="fedex">FedEx国际件</option>
+            <option value="vancl">凡客配送</option>
+            <option value="fanyukuaidi">凡宇快递</option>
+            <option value="fedexcn">Fedex</option>
+            <option value="fedexus">FedEx美国件</option>
+            <option value="guotongkuaidi">国通快递</option>
+            <option value="ganzhongnengda">能达速递</option>
+            <option value="gongsuda">共速达</option>
+            <option value="koreapost">韩国邮政</option>
+            <option value="huaqikuaiyun">华企快运</option>
+            <option value="jiajiwuliu">佳吉快运</option>
+            <option value="jd">京东快递</option>
+            <option value="canpost">加拿大邮政</option>
+            <option value="jiayunmeiwuliu">加运美</option>
+            <option value="jialidatong">嘉里大通</option>
+            <option value="jinguangsudikuaijian">京广速递</option>
+            <option value="kuayue">跨越速递</option>
+            <option value="kuaijiesudi">快捷速递</option>
+            <option value="kuaiyouda">四川快优达</option>
+            <option value="minbangsudi">民邦速递</option>
+            <option value="minghangkuaidi">民航快递</option>
+            <option value="ocs">OCS</option>
+            <option value="ontrac">OnTrac</option>
+            <option value="quanritongkuaidi">全日通</option>
+            <option value="quanyikuaidi">全一快递</option>
+            <option value="quanchenkuaidi">全晨快递</option>
+            <option value="quanjitong">全际通</option>
+            <option value="japanposten">日本邮政</option>
+            <option value="rufengda">如风达</option>
+            <option value="swisspost">瑞士邮政</option>
+            <option value="shenganwuliu">圣安物流</option>
+            <option value="shengfengwuliu">盛丰物流</option>
+            <option value="shenghuiwuliu">盛辉物流</option>
+            <option value="tnt">TNT</option>
+            <option value="ups">UPS</option>
+            <option value="usps">USPS</option>
+            <option value="wanjiawuliu">万家物流</option>
+            <option value="wanxiangwuliu">万象物流</option>
+            <option value="hkpost">香港邮政</option>
+            <option value="xinbangwuliu">新邦物流</option>
+            <option value="xinfengwuliu">信丰物流</option>
+            <option value="youzhengguoji">邮政国际包裹</option>
+            <option value="yuanchengwuliu">远成物流</option>
+            <option value="ytkd">运通中港快递</option>
+            <option value="ztky">中铁物流</option>
+            <option value="zhongyouwuliu">中邮物流</option>
+            <option value="zengyisudi">增益速递</option>
+        </select>
+        <input type="text" placeholder="快递单号" id="num">
+        <input type="submit" value="添加" id="add">
+        <input type="submit" value="删除所有" id="del">
+    </form>
+        <div id="item_show"></div>
+        <div id="result"></div>
+        <script src="check.js"></script>
+    </body>
+</html>

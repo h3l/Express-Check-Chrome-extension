@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "快递查询",
+    "version": "1.0",
+    "description": "查询快递",
+    "browser_action": {
+        "default_icon": {                    
+            "19": "images/icon19.png",           
+            "38": "images/icon38.png"            
+        },
+        "default_title": "快递查询",
+        "default_popup": "popup.html"        
+    },
+    "permissions": [
+        "http://api.open.baidu.com/*"
+    ]
+}
