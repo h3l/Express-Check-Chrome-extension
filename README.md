@@ -10,6 +10,7 @@ Express-Check-Chrome-extension
 - 解压
 - chrome菜单>工具>扩展程序>加载正在开发的扩展程序>选择chrome-extension文件夹
 - 确定
+- 点击浏览器工具栏中的“快递查询”图标
 
 截图
 =======
